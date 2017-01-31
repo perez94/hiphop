@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.perezzz.hiphopnews.DescFragment"
+    android:background="@drawable/hiphop2">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                app:srcCompat="@drawable/aquemini"
+                android:id="@+id/Cover" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:text="Descrição dos Albums"
+                android:id="@+id/desc"
+                android:layout_height="447dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <Button
+                    android:text="BeatMaker"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:onClick="beat_OnClick"
+                    android:id="@+id/BM"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="Music"
+                    android:layout_width="match_parent"
+                    android:layout_weight ="1"
+                    android:id="@+id/Song"
+                    android:layout_height="50dp"
+                    android:onClick="song_OnCLick" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
